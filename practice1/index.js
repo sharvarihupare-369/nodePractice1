@@ -54,6 +54,16 @@ let url = require("url")
 // let joinFilePath = path.join("file.md","read.md")
 // console.log(joinFilePath)
 
-let urlString = "https://github.com/sharvarihupare-369/nodePractice1"
-let parsedUrl = url.parse(urlString)
-console.log(parsedUrl)
+// let urlString = "https://github.com/sharvarihupare-369/nodePractice1"
+// let parsedUrl = url.parse(urlString)
+// console.log(parsedUrl)
+
+const parsedUrl = url.parse(
+  "https://blog.altcampus.io:80/students/register?name=altcampus&gender=male",
+  true
+);
+console.log(parsedUrl);
+console.log(parsedUrl.pathname);
+console.log(parsedUrl.query);
+console.log(parsedUrl.host);
+console.log(parsedUrl.protocol);
