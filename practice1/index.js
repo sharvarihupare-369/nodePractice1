@@ -62,8 +62,27 @@ const parsedUrl = url.parse(
   "https://blog.altcampus.io:80/students/register?name=altcampus&gender=male",
   true
 );
-console.log(parsedUrl);
+// console.log(parsedUrl);
 console.log(parsedUrl.pathname);
 console.log(parsedUrl.query);
 console.log(parsedUrl.host);
 console.log(parsedUrl.protocol);
+
+let cpuss = os.cpus()
+// console.log(cpuss)
+console.log(cpuss.length)
+let freemenCheck = os.freemem()
+console.log(freemenCheck)
+let uptime = os.uptime()
+console.log(uptime)
+let version = os.version()
+console.log(version)
+
+
+let buff1 = Buffer.alloc(12)
+console.log(buff1)
+// console.log(buff1.toString())
+
+buff1.write("Welcome to node.js")
+// console.log(buff1)
+console.log(buff1.toString())
