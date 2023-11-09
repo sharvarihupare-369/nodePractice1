@@ -1,0 +1,2 @@
+URL: www.google.com | Address: 2404:6800:4009:82c::2004 | IPv6
+URL: www.instagram.com | Address: 2a03:2880:f237:e5:face:b00c:0:4420 | IPv6

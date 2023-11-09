@@ -39,7 +39,6 @@ const server = http.createServer((req,res)=>{
                     else {
                      todos = JSON.parse(data);
                      todos.push(parsedTodo);  
-
                     }
                     fs.writeFile("./todo.json",JSON.stringify(todos),(err)=>{
                         if(err) res.end(err)
