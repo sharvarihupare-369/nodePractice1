@@ -40,9 +40,13 @@ const server = http.createServer((req,res)=>{
                      todos = JSON.parse(data);
                      todos.push(parsedTodo);  
                     }
-                    fs.writeFile("./todo.json",JSON.stringify(todos),(err)=>{
+                    // fs.writeFile("./todo.json",JSON.stringify(todos),(err)=>{
+                    //     if(err) res.end(err)
+                    //     else res.end("Data added")
+                    // })
+                    fs.watchFile('./todo.json',JSON.stringify(todos),(err)=>{
                         if(err) res.end(err)
-                        else res.end("Data added")
+                        else res.end("Data Added")
                     })
                 })
 
