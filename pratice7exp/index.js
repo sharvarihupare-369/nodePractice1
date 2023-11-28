@@ -12,6 +12,10 @@ app.get("/data",(req,res)=>{
   const dataStream = fs.createReadStream("./data.json","utf-8").pipe(res)
 })
 
+app.get("/info",(req,res)=>{
+  res.send("Info has been sent")
+})
+
 app.post("/adddata",(req,res)=>{
   console.log(req.body)
   res.send("Data has been sent")
